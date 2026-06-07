@@ -1,0 +1,501 @@
+2026-06-05 15:22:13,756 - agent - INFO - vector_store.py:125 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\方剂.txt内容已存在知识库内，跳过
+2026-06-05 15:22:13,761 - agent - INFO - vector_store.py:125 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\药材.txt内容已存在知识库内，跳过
+2026-06-05 15:22:13,768 - agent - INFO - vector_store.py:125 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\证型.txt内容已存在知识库内，跳过
+2026-06-05 15:22:13,768 - agent - INFO - vector_store.py:179 - [加载知识库]目录扫描完成，成功加载 0 个文件
+2026-06-05 15:26:53,422 - agent - INFO - vector_store.py:171 - [加载知识库]E:\666666\AI\中医辩证助手Agent\temp_data\gradio\方剂.txt内容加载成功
+2026-06-05 15:26:54,065 - agent - INFO - vector_store.py:171 - [加载知识库]E:\666666\AI\中医辩证助手Agent\temp_data\gradio\药材.txt内容加载成功
+2026-06-05 15:26:54,587 - agent - INFO - vector_store.py:171 - [加载知识库]E:\666666\AI\中医辩证助手Agent\temp_data\gradio\证型.txt内容加载成功
+2026-06-05 15:26:54,587 - agent - INFO - vector_store.py:179 - [加载知识库]目录扫描完成，成功加载 3 个文件
+2026-06-05 15:32:38,034 - agent - INFO - knowledge_manager.py:135 - [知识库管理] 删除文件 药材.txt，移除 7 个 chunk
+2026-06-05 15:33:10,511 - agent - INFO - vector_store.py:238 - [加载知识库]E:\666666\AI\中医辩证助手Agent\temp_data\药材.txt内容加载成功
+2026-06-05 16:58:05,284 - agent - ERROR - prompt_loader.py:68 - [load_analyze_image_prompts]解析报告提示词出错,[Errno 2] No such file or directory: 'E:\\666666\\AI\\中医辩证助手Agent\\analyze_image_prompt.txt'
+2026-06-05 16:58:41,591 - agent - ERROR - react_agent.py:116 - 图片分析异常：Invalid input type <class 'langchain_core.messages.human.HumanMessage'>. Must be a PromptValue, str, or list of BaseMessages.
+2026-06-05 17:00:05,655 - agent - ERROR - react_agent.py:116 - 图片分析异常：request_id: 5cbca7be-0874-9255-a9dd-f356e0c09a3b 
+ status_code: 400 
+ code: InvalidParameter 
+ message: <400> InternalError.Algo.InvalidParameter: Input should be a valid string: input.messages.0.content.str & Input should be a valid string: input.messages.0.content.list[union[str,function-after[post_check(), MultiModalItem]]].1.str & Input should be 'text', 'image', 'audio', 'video' or 'image_hw': input.messages.0.content.list[union[str,function-after[post_check(), MultiModalItem]]].1.function-after[post_check(), MultiModalItem].type
+2026-06-05 17:04:57,143 - agent - ERROR - react_agent.py:116 - 图片分析异常：list indices must be integers or slices, not str
+2026-06-05 17:05:36,522 - agent - ERROR - react_agent.py:116 - 图片分析异常：list indices must be integers or slices, not str
+2026-06-05 17:08:38,190 - agent - INFO - react_agent.py:114 - res.content type: <class 'list'>
+2026-06-05 17:08:38,191 - agent - INFO - react_agent.py:115 - res.content: [{'text': '根据您提供的图片，以下是对望诊内容的结构化分析：\n\n---\n\n### **【舌诊】**\n- **舌色**：淡红，无明显瘀斑或瘀点。  \n- **舌形**：舌体瘦薄，可见裂纹，舌尖有芒刺，舌边有齿痕，整体形态偏嫩。  \n- **舌苔**：苔色白，苔质薄且干燥，未见腻苔或剥落现象。  \n- **舌下络脉**：图片无法识别舌下络脉情况。\n\n---\n\n### **【面色与神态】**\n- **面色**：面色偏白，缺乏光泽，略显晦暗，未见明显浮肿。  \n- **神态**：精神状态尚可，未见明显萎靡或烦躁表现。\n\n---\n\n### **【其他可见体征】**\n- **口唇**：颜色淡白，干湿度正常，未见明显紫暗或干裂。  \n- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，也无干燥脱屑现象。  \n- **眼部**：巩膜颜色正常，眼睑色泽淡白，未见红肿或其他异常。\n\n---\n\n### **【药材识别】**\n图片中未显示药材，因此无法进行药材识别及品质判断。\n\n---\n\n### **【综合分析】**\n根据以上望诊
+2026-06-05 17:50:56,523 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-05 17:50:56,523 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|帮我看看，我这是什么问题，该怎么做
+
+【图片分析结果】
+根据您提供的图片，以下是对望诊内容的结构化分析：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。
+- **舌形**：舌体略显瘦薄，舌尖有轻微裂纹，舌边有齿痕，舌体整体较为嫩。
+- **舌苔**：苔色为白色，苔质较薄，表面干燥，未见腻、滑、腐等异常表现。
+- **舌下络脉**：舌下络脉未见明显青紫迂曲。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，显得晦暗，未见明显浮肿。
+- **神态**：精神状态略显萎靡，无明显烦躁表现。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色偏淡白，干湿度正常，未见明显紫暗或干裂。
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，局部皮肤稍显干燥。
+- **眼部**：巩膜颜色正常，眼睑色泽偏淡，未见红肿。
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：面色苍白、神态萎靡、舌色淡红且舌体瘦薄，提示气血不足，可能存在气虚证。气虚常表现为面色无华、乏力、精神不振等症状。
+
+2. **阴虚证**  
+   - **判断依据**：舌苔薄而干燥，舌体瘦薄，提示津液亏虚。阴虚证常见症状包括口干、舌红少苔或舌面干燥等。
+
+3. **血瘀证（轻度）**  
+   - **判断依据**：舌下络脉未见明显青紫迂曲，但舌体瘦薄、面色晦暗，可能存在轻度血瘀。血瘀证常表现为面色晦暗、舌质暗淡或有瘀斑。
+
+---
+
+### **总结**
+综合舌诊、面色及神态等观察结果，患者可能存在**气虚**和**阴虚**的倾向，同时伴有轻度血瘀的表现。建议结合患者的其他症状（如脉象、具体主诉等）进一步辨证施治。
+
+
+--- 
+以上分析仅供参考，具体诊断需结合四诊合参。
+2026-06-05 17:51:07,276 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 17:51:07,276 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '气短乏力,口干舌燥,舌瘦薄,苔薄干,面色苍白,神疲'}
+2026-06-05 17:51:14,121 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=气短乏力,口干舌燥,舌瘦薄,苔薄干,面色... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 17:51:18,048 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 17:51:18,052 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-05 17:51:18,052 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证（主症见神疲乏力、少气懒言；次症见口干、面色苍白；舌脉见舌瘦薄、苔薄干、脉虚无力，符合气虚证特征）  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：避免过劳，适当休息，饮食宜清淡易消化，可配合黄芪、党参等益气食材调养。
+2026-06-05 17:51:24,336 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 17:51:24,337 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '气阴两虚'}
+2026-06-05 17:51:27,677 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=气阴两虚... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 17:51:37,234 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 17:51:37,237 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-05 17:51:37,237 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未直接提供“气阴两虚”证型的完整条目。但根据中医理论及所给资料可综合推断：
+
+- “气虚证”主症为神疲乏力、少气懒言、语声低微，舌淡苔白，脉虚无力；
+- “阴虚证”主症为口干咽燥、五心烦热、潮热盗汗、颧红，舌红少苔，脉细数。
+
+**证型判断**：气阴两虚为气虚与阴虚并见，常见于久病或热病后期，表现为既有神疲乏力、少气懒言等气虚症状，又有口干咽燥、五心烦热等阴虚表现。  
+**治法**：益气养阴。  
+**推荐方剂**：参考资料未明确列出气阴两虚代表方，但临床常用生脉散（由人参、麦冬、五味子组成）为基础方加减。  
+**调理建议**：避免劳累，忌辛辣燥热食物，适当食用山药、百合、莲子、西洋参等益气养阴之品。
+
+> 注：以上分析基于参考资料中气虚证与阴虚证内容综合得出，因原始资料未设“气阴两虚”独立条目，故未引用具体方剂原文。
+2026-06-05 17:51:40,962 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-05 17:51:40,962 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '生脉散'}
+2026-06-05 17:51:45,671 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=生脉散... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-05 17:51:46,650 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-05 17:51:46,653 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-05 17:51:46,653 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含“生脉散”的相关信息。
+2026-06-05 17:51:51,901 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 17:51:51,902 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '人参'}
+2026-06-05 17:51:55,237 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=人参... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 17:51:56,253 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 17:51:56,258 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有13条消息
+2026-06-05 17:51:56,259 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|未在参考资料中找到关于“人参”的信息。
+2026-06-05 17:52:00,974 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 17:52:00,974 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '山药'}
+2026-06-05 17:52:04,135 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=山药... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 17:52:05,106 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 17:52:05,108 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有15条消息
+2026-06-05 17:52:05,109 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“山药”的信息。
+2026-06-05 18:02:28,686 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-05 18:02:28,686 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-05 18:07:57,848 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-05 18:07:57,849 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-05 18:08:33,135 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-05 18:08:33,135 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|请问我这是什么问题，我该怎么办
+
+【图片分析结果】
+根据您提供的图片，以下是对望诊内容的结构化分析：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。
+- **舌形**：舌体略显胖大，边缘有轻微齿痕，表面可见少量裂纹，舌体整体偏嫩。
+- **舌苔**：苔色为白色，苔质薄且干燥，未见明显腻、滑、腐或剥落现象。
+- **舌下络脉**：图片无法识别舌下络脉的具体情况。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，略显晦暗，未见明显浮肿。
+- **神态**：精神状态尚可，未表现出明显的萎靡或烦躁。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色偏淡白，干湿度正常，未见紫暗或明显干裂。
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，局部皮肤干燥脱屑不明显。
+- **眼部**：巩膜颜色正常，眼睑色泽偏白，未见红肿或其他异常。
+
+---
+
+### **【药材识别】**
+（图片中未显示药材，故无法识别。）
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：舌色淡红、舌体胖大且有齿痕，舌苔薄白而干燥，面色偏白且缺乏光泽，提示气血不足，脾肺气虚。气虚则推动无力，导致舌体胖大、齿痕明显；气血不足则面色失荣，呈现偏白无华的状态。
+
+2. **阴虚证**  
+   - **判断依据**：舌苔薄白而干燥，提示津液不足，可能存在阴虚内热的情况。阴虚则津液不能濡养舌面，导致舌苔干燥；同时，阴虚也可能表现为面色偏白而晦暗。
+
+3. **湿困脾土证**  
+   - **判断依据**：舌体胖大且有齿痕，提示体内可能存在湿邪困阻脾胃的情况。湿邪内停则舌体胖大，湿邪困脾则可能导致面色偏白且缺乏光泽。
+
+---
+
+### **总结**
+综合舌诊、面色及神态等表现，患者可能存在**气虚证**和**阴虚证**的倾向，同时伴有**湿困脾土**的表现。建议进一步结合患者的症状（如乏力、口干、食欲不振等）及其他四诊信息进行详细辨证，以明确具体证型并制定治疗方案。
+
+
+（注：以上分析仅供参考，具体诊断需结合临床实际和其他辅助检查结果。）
+2026-06-05 18:08:41,426 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 18:08:41,426 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '乏力,气短,口干,舌胖有齿痕,苔薄白干,面色白无华'}
+2026-06-05 18:08:47,423 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=乏力,气短,口干,舌胖有齿痕,苔薄白干,... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 18:08:51,131 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 18:08:51,134 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-05 18:08:51,134 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证（主症见乏力、气短；舌淡胖有齿痕、苔薄白、面色㿠白无华符合气虚舌脉表现）  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：避免过劳，适当休息，饮食宜清淡易消化，可适量食用山药、莲子、大枣等健脾益气之品。
+2026-06-05 18:08:58,156 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 18:08:58,156 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '口干,乏力,气短,舌干,舌胖有齿痕'}
+2026-06-05 18:09:01,190 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=口干,乏力,气短,舌干,舌胖有齿痕... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 18:09:05,267 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 18:09:05,270 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-05 18:09:05,270 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：患者症状中“口干、舌干”提示阴液不足，“乏力、气短”属气虚表现，“舌胖有齿痕”为脾虚湿盛之象。综合来看，符合**气阴两虚证**（参考资料中虽未直接列出该证型，但可由气虚证与阴虚证主次症组合推断）。
+
+治法：益气养阴，生津润燥。
+
+推荐方剂：可参考**生脉散**（益气养阴，适用于气阴两虚之口干、气短、乏力），或结合**四君子汤**（益气健脾）与**沙参麦冬汤**（养阴生津）加减使用（依据参考资料中气虚证用四君子汤、肺胃阴虚用沙参麦冬汤）。
+
+调理建议：避免辛辣燥热食物，适当食用山药、百合、麦冬等益气养阴之品；注意休息，避免过度劳累耗气伤阴。
+2026-06-05 18:09:10,779 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-05 18:09:10,779 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '生脉散'}
+2026-06-05 18:09:15,144 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=生脉散... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-05 18:09:16,189 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-05 18:09:16,191 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-05 18:09:16,191 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含“生脉散”的相关信息。
+2026-06-05 18:09:18,509 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-05 18:09:18,510 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-05 18:09:22,994 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四君子汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-05 18:09:26,759 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-05 18:09:26,762 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-05 18:09:26,762 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参9g、白术9g、茯苓9g、炙甘草6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞，如谦谦君子
+2026-06-05 18:09:31,322 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 18:09:31,322 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '麦冬'}
+2026-06-05 18:09:34,553 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=麦冬... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 18:09:35,644 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 18:09:35,647 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有13条消息
+2026-06-05 18:09:35,647 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|未在参考资料中找到关于“麦冬”的信息。
+2026-06-05 18:09:37,445 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 18:09:37,445 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '山药'}
+2026-06-05 18:09:40,680 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=山药... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 18:09:41,707 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 18:09:41,710 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有15条消息
+2026-06-05 18:09:41,710 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“山药”的信息。
+2026-06-05 18:09:42,997 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 18:09:42,997 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '五味子'}
+2026-06-05 18:09:46,188 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=五味子... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 18:09:47,252 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 18:09:47,255 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有17条消息
+2026-06-05 18:09:47,255 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“五味子”的信息。
+2026-06-05 18:16:48,822 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-05 18:16:48,822 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我这是什么问题，我该如何做
+
+【图片分析结果】
+根据提供的图片，以下是中医望诊的辅助分析结果：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。
+- **舌形**：舌体略显胖大，边缘有轻微齿痕，表面可见细小裂纹，舌体质地较嫩。
+- **舌苔**：苔色为白色，苔质薄且略干燥，未见明显厚腻、滑润或剥落现象。
+- **舌下络脉**：舌下络脉未见明显青紫迂曲。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，显得较为晦暗，未见明显浮肿。
+- **神态**：精神状态稍显萎靡，无明显烦躁表现。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色偏淡白，干湿度正常，无明显紫暗或干裂。
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，局部皮肤略显干燥。
+- **眼部**：巩膜颜色正常，眼睑色泽偏淡，无明显红肿。
+
+---
+
+### **【药材识别】**
+（图片中未出现药材，无法进行识别与分析。）
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：舌色淡红、舌体胖大且有齿痕，提示气虚不能固摄津液，导致舌体水湿停滞；面色苍白、神态萎靡进一步支持气虚的表现。
+
+2. **阴虚证**  
+   - **判断依据**：舌面裂纹及舌苔薄而干燥，提示阴液不足；面色晦暗、皮肤干燥也符合阴虚内热的特点。
+
+3. **湿困脾证**  
+   - **判断依据**：舌体胖大、齿痕明显，提示脾虚湿盛；舌苔薄白但略干燥，可能为湿邪困脾，影响津液输布。
+
+---
+
+### **总结**
+综合来看，患者可能存在**气虚兼阴虚**的证候倾向，同时伴有**湿困脾**的表现。建议结合四诊合参，进一步明确诊断并制定治疗方案。  
+（注：以上分析仅供参考，具体诊疗需由专业中医师进行。）
+2026-06-05 18:16:57,123 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 18:16:57,123 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '乏力,气短,口干,舌胖有齿痕,苔薄白而干'}
+2026-06-05 18:17:02,437 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=乏力,气短,口干,舌胖有齿痕,苔薄白而干... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 18:17:05,786 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 18:17:05,788 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-05 18:17:05,788 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证（主症见乏力、气短；舌胖有齿痕、苔薄白为气虚兼湿象，口干可能因气不布津）  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：避免劳累，饮食宜甘温补气，如山药、莲子、黄芪炖鸡等。
+2026-06-05 18:17:13,023 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-05 18:17:13,023 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-05 18:17:17,466 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四君子汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-05 18:17:21,436 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-05 18:17:21,439 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-05 18:17:21,440 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂名称】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参9g、白术9g、茯苓9g、炙甘草6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞，如谦谦君子
+2026-06-05 18:17:26,991 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 18:17:26,991 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '山药'}
+2026-06-05 18:17:30,121 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=山药... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 18:17:31,205 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 18:17:31,207 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-05 18:17:31,208 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“山药”的信息。
+2026-06-05 18:22:15,142 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-05 18:22:15,143 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我这是什么问题，我该如何做
+
+【图片分析结果】
+根据您提供的图片，以下是对望诊内容的结构化分析：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。
+- **舌形**：舌体略显瘦薄，舌尖有轻微裂纹，舌边无明显齿痕，舌体柔软，未见芒刺或瘀斑。
+- **舌苔**：苔色为白色，苔质较薄，表面略显干燥，无腻、滑、腐等异常表现。
+- **舌下络脉**：舌下络脉未见明显青紫迂曲。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，略显晦暗，未见明显浮肿。
+- **神态**：精神状态尚可，但略显萎靡，无明显烦躁表现。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色淡白，干湿度正常，无明显紫暗或干裂。
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，局部皮肤干燥脱屑不明显。
+- **眼部**：巩膜颜色正常，眼睑色泽偏白，无明显红肿。
+
+---
+
+### **【药材识别】**
+（图片中未见药材，无法进行识别和分析。）
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：面色偏白、缺乏光泽，舌色淡红且舌体瘦薄，提示气血不足，可能存在气虚证。气虚常表现为面色无华、精神萎靡、舌质淡嫩等症状，与图片所见相符。
+
+2. **阴虚证**  
+   - **判断依据**：舌苔薄而干燥，提示津液不足，可能存在阴虚证。阴虚常伴有口干、舌燥、舌质偏红等症状，结合舌苔干燥的表现，支持此证候倾向。
+
+3. **血瘀证**  
+   - **判断依据**：虽然舌下络脉未见明显青紫迂曲，但面色晦暗、口唇淡白可能提示轻度血瘀。血瘀证常表现为面色晦暗、舌质暗淡或有瘀斑，需进一步结合其他症状综合判断。
+
+---
+
+**总结**：  
+综合舌诊、面色及神态等观察，患者可能存在**气虚证**和**阴虚证**的倾向，同时需警惕**血瘀证**的可能性。建议结合患者的其他症状（如脉象、病史等）进一步辨证施治。  
+
+（注：以上分析仅供参考，具体诊断需结合临床全面评估。）
+2026-06-05 18:25:17,579 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-05 18:25:17,580 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我这是什么问题，我该怎么做？
+
+【图片分析结果】
+根据您提供的图片，以下是对望诊内容的结构化分析：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。  
+- **舌形**：舌体略显胖大，边缘有轻微齿痕，表面可见细裂纹，舌体形态偏嫩。  
+- **舌苔**：苔色为白色，苔质薄且干燥，未见明显厚腻、滑润或剥落现象。  
+- **舌下络脉**：图片无法识别舌下络脉的具体情况。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，呈现晦暗之象，未见明显浮肿。  
+- **神态**：精神状态略显萎靡，无明显烦躁表现。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色偏淡白，干湿度正常，未见明显紫暗或异常干燥。  
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，但可能存在轻度干燥脱屑。  
+- **眼部**：巩膜颜色正常，眼睑色泽偏淡，未见明显红肿。
+
+---
+
+### **【药材识别】**
+（图片中未提供药材信息，故此项暂不作分析。）
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：面色苍白、舌体胖大有齿痕、舌苔薄白且干燥，提示气血不足，脾肺气虚。气虚则推动无力，导致面色无华、舌体胖嫩。
+
+2. **血虚证**  
+   - **判断依据**：面色晦暗、口唇淡白，提示血液亏虚，濡养功能减弱。血虚则不能上荣于面部及舌体，表现为面色萎黄或苍白。
+
+3. **津液不足证**  
+   - **判断依据**：舌苔干燥、皮肤轻度干燥脱屑，提示体内津液亏乏，未能充分滋养肌肤和舌面。
+
+---
+
+综上所述，该患者可能存在气虚、血虚及津液不足的证候倾向，需结合四诊合参进一步明确辨证施治方案。建议进一步询问病史、脉象及其他症状以完善诊断。
+2026-06-05 19:53:53,908 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-05 19:53:53,908 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我这是什么问题，我该怎么做？
+
+【图片分析结果】
+根据您提供的图片，以下是对望诊内容的结构化分析：
+
+---
+
+### **【舌诊】**
+- **舌色**：淡红，无明显瘀斑或瘀点。
+- **舌形**：舌体略显胖大，边缘有轻微齿痕，舌面可见裂纹，舌体较嫩。
+- **舌苔**：苔色为白色，苔质薄且略干燥，未见明显厚腻、滑润或剥落现象。
+- **舌下络脉**：图片无法识别舌下络脉的具体情况。
+
+---
+
+### **【面色与神态】**
+- **面色**：面色偏白，缺乏光泽，略显晦暗，未见明显浮肿。
+- **神态**：精神状态尚可，未表现出明显的萎靡或烦躁。
+
+---
+
+### **【其他可见体征】**
+- **口唇**：颜色偏淡白，干湿度正常，未见紫暗或异常分泌物。
+- **皮肤**：肤色偏白，未见明显皮疹、斑疹、黄疸或水肿，局部皮肤稍显干燥。
+- **眼部**：巩膜颜色正常，眼睑色泽偏淡，未见红肿或其他异常。
+
+---
+
+### **【药材识别】**
+（注：图片中未显示药材，因此无法进行药材识别。）
+
+---
+
+### **【综合分析】**
+根据以上望诊所见，归纳可能的证候倾向如下：
+
+1. **气虚证**  
+   - **判断依据**：面色偏白、舌色淡红、舌体胖大且有齿痕，均为气虚的典型表现。气虚导致气血运行无力，故面色失于荣养而显苍白；舌体胖大、齿痕提示体内水湿停滞，进一步支持气虚的诊断。
+
+2. **阴虚证**  
+   - **判断依据**：舌苔薄且略干燥，裂纹明显，提示津液不足，符合阴虚的表现。阴虚则内热，可能导致舌面出现干燥及裂纹。
+
+3. **湿阻证**  
+   - **判断依据**：舌体胖大、齿痕明显，提示体内可能存在湿邪停滞。湿邪困脾，运化失常，故舌体胖大且出现齿痕。
+
+---
+
+综上所述，患者可能存在**气虚**、**阴虚**及**湿阻**的复合证候，需结合其他四诊信息进一步辨证施治。建议进一步询问患者的症状（如乏力、盗汗、口干、小便不利等）以明确主次证候。
+2026-06-05 19:54:00,629 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-05 19:54:00,629 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '气短乏力,口干舌燥,舌胖有齿痕,大便溏泄'}
+2026-06-05 19:54:07,365 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=气短乏力,口干舌燥,舌胖有齿痕,大便溏泄... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-05 19:54:12,708 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-05 19:54:12,726 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-05 19:54:12,727 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：患者表现为气短乏力、大便溏泄、舌胖有齿痕，符合气虚证（尤其脾气虚）；同时兼见口干舌燥，但无阴虚典型舌脉（如舌红少苔、脉细数），亦无阳虚之畏寒肢冷、苔白滑等表现，故以气虚为主，或兼有津液输布失常。
+
+治法：益气补虚，健脾化湿。
+
+推荐方剂：四君子汤（针对脾胃气虚为主）。
+
+调理建议：饮食宜清淡易消化，忌生冷油腻；可适当食用山药、莲子、薏苡仁等健脾益气之品；避免过度劳累，注意规律作息。
+2026-06-05 19:54:22,149 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-05 19:54:22,149 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-05 19:54:27,080 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四君子汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-05 19:54:31,821 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-05 19:54:31,824 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-05 19:54:31,824 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂名称】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参9g、白术9g、茯苓9g、炙甘草6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞，如谦谦君子
+2026-06-05 19:54:33,184 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 19:54:33,185 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '山药'}
+2026-06-05 19:54:36,315 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=山药... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 19:54:37,248 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 19:54:37,252 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-05 19:54:37,252 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“山药”的信息。
+2026-06-05 19:54:38,441 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 19:54:38,441 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '石斛'}
+2026-06-05 19:54:41,700 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=石斛... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 19:54:43,094 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 19:54:43,097 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-05 19:54:43,097 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“石斛”的信息。
+2026-06-05 19:54:44,310 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-05 19:54:44,310 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '白术'}
+2026-06-05 19:54:47,408 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=白术... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-05 19:54:50,888 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-05 19:54:50,890 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有13条消息
+2026-06-05 19:54:50,890 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【性味】苦、甘，温  
+【归经】脾经、胃经  
+【功效】健脾益气，燥湿利水，止汗，安胎  
+【主治】脾气虚弱之食少便溏、神疲乏力；痰饮水肿；表虚自汗；脾虚胎动不安  
+【用量】6～12g（燥湿利水生用，补气健脾炒用）  
+【禁忌】阴虚内热、津液亏耗燥渴者慎用。气滞胀闷者忌用

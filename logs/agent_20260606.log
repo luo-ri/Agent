@@ -1,0 +1,154 @@
+2026-06-06 14:39:28,711 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-06 14:39:28,712 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-06 14:41:18,496 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-06 14:41:18,496 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-06 14:44:03,579 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-06 14:44:03,579 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-06 14:44:44,938 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-06 14:44:44,938 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-06 14:56:07,196 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-06 14:56:07,196 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你是谁？
+2026-06-06 15:33:30,954 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-06 15:33:30,954 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我这是什么问题，我该怎么做？
+
+【图片分析结果】
+舌淡红、苔薄白，面色正常 → 气血不足
+2026-06-06 15:33:39,496 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-06 15:33:39,497 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '神疲乏力,心悸,失眠,头晕,面色无华,唇甲色淡'}
+2026-06-06 15:33:46,295 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=神疲乏力,心悸,失眠,头晕,面色无华,唇... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-06 15:33:48,698 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-06 15:33:48,718 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-06 15:33:48,718 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：血虚证  
+治法：补血养血  
+推荐方剂：四物汤（血虚基础方）或归脾汤（心脾两虚为主）  
+调理建议：适用于贫血、失血后调养、神经衰弱、产后体虚等情形，注意休息，避免过度劳累。
+2026-06-06 15:33:49,956 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-06 15:33:49,956 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四物汤'}
+2026-06-06 15:33:54,471 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四物汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-06 15:33:56,057 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-06 15:33:56,060 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-06 15:33:56,061 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未提供关于“四物汤”的具体信息，因此无法根据给定资料对其组成、功效、主治等内容进行总结。
+2026-06-06 15:33:57,372 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-06 15:33:57,373 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '归脾汤'}
+2026-06-06 15:34:02,048 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=归脾汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-06 15:34:03,213 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-06 15:34:03,213 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-06 15:34:03,217 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含“归脾汤”的相关信息。
+2026-06-06 15:34:04,577 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-06 15:34:04,577 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '当归'}
+2026-06-06 15:34:07,780 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=当归... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-06 15:34:10,343 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-06 15:34:10,359 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-06 15:34:10,359 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【性味】甘、辛，温  
+【归经】肝、心、脾经  
+【功效】补血活血，调经止痛，润肠通便  
+【主治】血虚萎黄，眩晕心悸；月经不调，经闭痛经；虚寒腹痛；肠燥便秘  
+【用量】6～12g  
+【禁忌】湿盛中满、大便溏泻者慎用
+2026-06-06 15:34:11,585 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-06 15:34:11,585 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '黄芪'}
+2026-06-06 15:34:14,891 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=黄芪... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-06 15:34:17,752 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-06 15:34:17,757 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有13条消息
+2026-06-06 15:34:17,757 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【性味】甘，温  
+【归经】脾、肺经  
+【功效】补气升阳，固表止汗，利水消肿  
+【主治】脾气虚弱，食少便溏；肺气虚衰，咳喘气短；表虚自汗；气虚水肿  
+【用量】9～30g  
+【禁忌】表实邪盛、气滞湿阻、食积内停、阴虚阳亢、疮痈初起者慎用
+2026-06-06 16:17:11,477 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-06 16:17:11,477 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我最近神疲乏力，少气懒言，语声低微，是什么问题？
+2026-06-06 16:17:12,859 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-06 16:17:12,863 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '神疲乏力,少气懒言,语声低微'}
+2026-06-06 16:17:19,536 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=神疲乏力,少气懒言,语声低微... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-06 16:17:21,096 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-06 16:17:21,100 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-06 16:17:21,100 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：适用于神疲乏力、少气懒言、语声低微等症状，常见于慢性疲劳综合征、久病体虚等情形。
+2026-06-06 16:17:23,366 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-06 16:17:23,371 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-06 16:17:27,997 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四君子汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-06 16:17:31,951 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-06 16:17:31,954 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-06 16:17:31,955 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂名称】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参 9g、白术 9g、茯苓 9g、炙甘草 6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞
+2026-06-06 16:17:33,390 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-06 16:17:33,390 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '补中益气汤'}
+2026-06-06 16:17:37,881 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=补中益气汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-06 16:17:39,370 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-06 16:17:39,372 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-06 16:17:39,373 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含“补中益气汤”的相关信息，无法提供该方剂的组成、功效、主治等内容。
+2026-06-06 16:17:40,743 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-06 16:17:40,743 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '人参'}
+2026-06-06 16:17:43,949 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=人参... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-06 16:17:44,838 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-06 16:17:44,838 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-06 16:17:44,838 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|未在参考资料中找到关于“人参”的信息。
+2026-06-06 16:17:45,986 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-06 16:17:45,986 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '黄芪'}
+2026-06-06 16:17:49,108 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=黄芪... BM25=7 + 向量=7 → RRF=7 → 精排=3
+2026-06-06 16:17:51,888 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-06 16:17:51,894 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-06 16:17:51,894 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【性味】甘，温  
+【归经】脾、肺经  
+【功效】补气升阳，固表止汗，利水消肿  
+【主治】脾气虚弱，食少便溏；肺气虚衰，咳喘气短；表虚自汗；气虚水肿  
+【用量】9～30g  
+【禁忌】表实邪盛、气滞湿阻、食积内停、阴虚阳亢、疮痈初起者慎用
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆神疲乏力
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆少气懒言
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆语声低微
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆面色萎黄
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆气短乏力
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆食少便溏
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆气虚证
+2026-06-06 16:18:04,289 - agent - INFO - shorttermMemory.py:102 - 已获取短期记忆脾胃气虚证
+2026-06-06 16:19:12,673 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-06 16:19:12,673 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|已知症状：神疲乏力、少气懒言、语声低微、面色萎黄、气短乏力、食少便溏
+已辨证据：气虚证、脾胃气虚证
+
+我这个病大概需要治疗多久？
+2026-06-06 16:19:16,062 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-06 16:19:16,063 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '脾胃气虚证 治疗周期 疗程'}
+2026-06-06 16:19:19,066 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=脾胃气虚证 治疗周期 疗程... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-06 16:19:21,907 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-06 16:19:21,907 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-06 16:19:21,914 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|根据参考资料，脾胃气虚证属于【气虚证】范畴，其治疗相关信息如下：
+
+- **治法**：益气补虚  
+- **代表方**：四君子汤（适用于脾胃气虚为主）  
+- **临床举例**：慢性疲劳综合征、久病体虚、食欲不振等  
+
+参考资料中未提及具体的治疗周期或疗程时长，因此无法提供确切的疗程信息。
+2026-06-06 16:19:25,154 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-06 16:19:25,154 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-06 16:19:29,649 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=四君子汤... BM25=5 + 向量=5 → RRF=5 → 精排=3
+2026-06-06 16:19:33,862 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-06 16:19:33,865 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-06 16:19:33,865 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参 9g、白术 9g、茯苓 9g、炙甘草 6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞
+2026-06-06 16:19:37,087 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-06 16:19:37,087 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '慢性疲劳综合征 脾胃气虚 中医调理周期'}
+2026-06-06 16:19:40,105 - agent - INFO - hybrid_retriever.py:258 - [混合检索] query=慢性疲劳综合征 脾胃气虚 中医调理周期... BM25=4 + 向量=4 → RRF=4 → 精排=3
+2026-06-06 16:19:44,045 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-06 16:19:44,045 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-06 16:19:44,045 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|根据参考资料，慢性疲劳综合征在中医辨证中可归属于**气虚证**，特别是**脾胃气虚**类型。
+
+- **证型判断**：气虚证（脾胃气虚为主）  
+- **治法**：益气补虚  
+- **推荐方剂**：四君子汤  
+- **调理周期**：参考资料中未明确提及具体调理周期，需结合临床实际辨证施治。
+
+注：以上内容严格依据所提供参考资料总结，未包含周期性治疗的具体时长信息。

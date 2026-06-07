@@ -1,0 +1,16 @@
+collection_name: agent
+persist_directory: chroma_db
+k: 3
+data_path: data
+md5_hex_store: config/md5.txt
+allow_knowledge_file_type: ['txt','pdf','docx']
+
+herb_chunk_size: 300
+herb_chunk_overlap: 20
+
+prescription_chunk_size: 600
+prescription_chunk_overlap: 80
+
+symptom_chunk_size: 500
+symptom_chunk_overlap: 50
+separators: ['##',"\n\n", "\n", "。", "；", "，", " ", ""]

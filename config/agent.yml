@@ -1,0 +1,9 @@
+HISTORY_FILE: history
+windows: {
+            "qwen3-max": 128000,
+            "qwen3-70b": 128000,
+            "qwen-plus": 131072,
+            "qwen-turbo": 1000000,
+        }
+
+multimodal_model_name: 'qwen-vl-plus'

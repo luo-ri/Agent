@@ -1,0 +1,3 @@
+main_prompt_path: prompts/main_prompt.txt
+rag_summarize_prompt_path: prompts/rag_prompt.txt
+analyze_image_prompt_path: prompts/analyze_image_prompt.txt

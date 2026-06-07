@@ -1,0 +1,20 @@
+{
+  "方剂.txt": {
+    "chunk_count": 5,
+    "source_type": "prescription",
+    "md5": "de14bcd63030968fb43bb3ef52ca893c",
+    "added_at": "2026-06-05T15:26:53.422502"
+  },
+  "证型.txt": {
+    "chunk_count": 4,
+    "source_type": "symptom",
+    "md5": "ef007a90fba5e34c3ab517964350033e",
+    "added_at": "2026-06-05T15:26:54.587389"
+  },
+  "药材.txt": {
+    "chunk_count": 7,
+    "source_type": "herb",
+    "md5": "b1b6e677fbcc8776b83b636be21b1495",
+    "added_at": "2026-06-05T15:33:10.510959"
+  }
+}

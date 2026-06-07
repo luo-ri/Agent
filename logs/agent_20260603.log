@@ -1,0 +1,106 @@
+2026-06-03 13:36:39,584 - agent - INFO - vector_store.py:151 - [加载知识库]目录扫描完成，成功加载 0 个文件
+2026-06-03 13:39:36,488 - agent - INFO - vector_store.py:109 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\方剂.txt内容已存在知识库内，跳过
+2026-06-03 13:39:36,489 - agent - INFO - vector_store.py:109 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\药材.txt内容已存在知识库内，跳过
+2026-06-03 13:39:37,047 - agent - INFO - vector_store.py:143 - [加载知识库]E:\666666\AI\中医辩证助手Agent\data\证型.txt内容加载成功
+2026-06-03 13:39:37,047 - agent - INFO - vector_store.py:151 - [加载知识库]目录扫描完成，成功加载 1 个文件
+2026-06-03 13:53:49,120 - agent - INFO - vector_store.py:143 - [加载知识库]temp_data\gradio\11.docx内容加载成功
+2026-06-03 13:53:49,129 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\方剂.txt内容已存在知识库内，跳过
+2026-06-03 13:53:49,129 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\药材.txt内容已存在知识库内，跳过
+2026-06-03 13:53:49,129 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\证型.txt内容已存在知识库内，跳过
+2026-06-03 13:53:49,129 - agent - INFO - vector_store.py:151 - [加载知识库]目录扫描完成，成功加载 1 个文件
+2026-06-03 13:59:47,377 - agent - INFO - vector_store.py:167 - [加载知识库]temp_data\方剂.txt内容已存在知识库内，跳过
+2026-06-03 14:46:48,804 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\方剂.txt内容已存在知识库内，跳过
+2026-06-03 14:46:48,805 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\药材.txt内容已存在知识库内，跳过
+2026-06-03 14:46:48,806 - agent - INFO - vector_store.py:109 - [加载知识库]temp_data\gradio\证型.txt内容已存在知识库内，跳过
+2026-06-03 14:46:48,806 - agent - INFO - vector_store.py:151 - [加载知识库]目录扫描完成，成功加载 0 个文件
+2026-06-03 14:47:19,996 - agent - INFO - vector_store.py:167 - [加载知识库]temp_data\药材.txt内容已存在知识库内，跳过
+2026-06-03 15:12:09,895 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 15:12:09,895 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-03 15:12:24,244 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 15:12:24,244 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你是谁？
+2026-06-03 17:12:11,137 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:12:11,138 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我最近神疲乏力，少气懒言，语声低微，该怎么办？
+2026-06-03 17:12:15,080 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-03 17:12:15,081 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '神疲乏力,少气懒言,语声低微'}
+2026-06-03 17:12:18,870 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-03 17:12:18,870 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-03 17:12:18,870 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：适用于神疲乏力、少气懒言、语声低微等症状，常见于慢性疲劳综合征、久病体虚等情形；注意休息，避免过劳，饮食宜清淡易消化。  
+
+⚠️ 以上仅供参考，具体诊疗请线下就医
+2026-06-03 17:12:23,354 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-03 17:12:23,355 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-03 17:12:27,629 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-03 17:12:27,629 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-03 17:12:27,629 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂名称】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参 9g、白术 9g、茯苓 9g、炙甘草 6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】本方为补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药合用，温而不燥，补而不滞，如谦谦君子  
+
+⚠️ 以上仅供参考，具体诊疗请线下就医
+2026-06-03 17:12:29,063 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-03 17:12:29,063 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '补中益气汤'}
+2026-06-03 17:12:30,652 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-03 17:12:30,654 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-03 17:12:30,654 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含“补中益气汤”的相关信息。  
+⚠️ 以上仅供参考，具体诊疗请线下就医
+2026-06-03 17:12:35,807 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-03 17:12:35,807 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '人参'}
+2026-06-03 17:12:37,214 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-03 17:12:37,215 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-03 17:12:37,215 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|参考资料中未包含关于“人参”的信息。  
+⚠️ 以上仅供参考，具体诊疗请线下就医
+2026-06-03 17:17:46,467 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:17:46,467 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|我最近神疲乏力，少气懒言，语声低微，该怎么办？
+2026-06-03 17:17:47,894 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_symptoms
+2026-06-03 17:17:47,895 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '神疲乏力,少气懒言,语声低微'}
+2026-06-03 17:17:50,588 - agent - INFO - middleware.py:37 - [tool monitor]工具get_symptoms调用成功
+2026-06-03 17:17:50,590 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有3条消息
+2026-06-03 17:17:50,590 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|证型判断：气虚证  
+治法：益气补虚  
+推荐方剂：四君子汤（脾胃气虚为主）或补中益气汤（中气下陷为主）  
+调理建议：适用于神疲乏力、少气懒言、语声低微等症状，常见于慢性疲劳综合征、久病体虚等情形；可配合饮食调养，避免过度劳累。
+2026-06-03 17:17:51,456 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-03 17:17:51,456 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '四君子汤'}
+2026-06-03 17:17:55,226 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-03 17:17:55,228 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有5条消息
+2026-06-03 17:17:55,228 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【方剂名称】四君子汤  
+【来源】宋《太平惠民和剂局方》  
+【组成】人参 9g、白术 9g、茯苓 9g、炙甘草 6g  
+【功效】益气健脾  
+【主治】脾胃气虚证。症见面色萎黄，语声低微，气短乏力，食少便溏，舌淡苔白，脉虚弱  
+【用法】水煎服  
+【方解】本方为补气基础方。人参为君，大补元气；白术为臣，健脾燥湿；茯苓为佐，健脾渗湿；炙甘草为使，益气和中、调和诸药。四药相合，温而不燥，补而不滞，如谦谦君子
+2026-06-03 17:17:56,315 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_Prescription
+2026-06-03 17:17:56,316 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '补中益气汤'}
+2026-06-03 17:17:57,603 - agent - INFO - middleware.py:37 - [tool monitor]工具get_Prescription调用成功
+2026-06-03 17:17:57,606 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有7条消息
+2026-06-03 17:17:57,606 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|未在参考资料中找到关于“补中益气汤”的信息。
+2026-06-03 17:17:59,049 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-03 17:17:59,049 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '黄芪'}
+2026-06-03 17:18:01,524 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-03 17:18:01,526 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有9条消息
+2026-06-03 17:18:01,526 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|【性味】甘，温  
+【归经】脾、肺经  
+【功效】补气升阳，固表止汗，利水消肿  
+【主治】脾气虚弱，食少便溏；肺气虚衰，咳喘气短；表虚自汗；气虚水肿  
+【用量】9～30g  
+【禁忌】表实邪盛、气滞湿阻、食积内停、阴虚阳亢、疮痈初起者慎用
+2026-06-03 17:18:02,739 - agent - INFO - middleware.py:31 - [tool monitor]执行工具：get_herbs
+2026-06-03 17:18:02,739 - agent - INFO - middleware.py:32 - [tool monitor]传入参数：{'query': '党参'}
+2026-06-03 17:18:04,084 - agent - INFO - middleware.py:37 - [tool monitor]工具get_herbs调用成功
+2026-06-03 17:18:04,086 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有11条消息
+2026-06-03 17:18:04,086 - agent - DEBUG - middleware.py:64 - [log_before_model]ToolMessage|未在参考资料中找到关于“党参”的信息。
+2026-06-03 17:19:32,713 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:19:32,713 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|谢谢你
+2026-06-03 17:26:59,398 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:26:59,398 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你好
+2026-06-03 17:27:52,436 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:27:52,436 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你是谁？
+2026-06-03 17:32:42,309 - agent - INFO - middleware.py:61 - [log_before_model]即将调用模型，带有1条消息
+2026-06-03 17:32:42,309 - agent - DEBUG - middleware.py:64 - [log_before_model]HumanMessage|你能做什么？

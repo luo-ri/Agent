@@ -1,0 +1,6 @@
+chat_model_name: qwen3-max
+embedding_model_name: text-embedding-v4
+
+
+INDEX_FILE: config/knowledge_index.json
+reserved_output: 2000
